@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "d5b131ef-dd49-4050-82f6-d84f0cc75865",
+		"name": "01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tut.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "11bfd182-9730-43cc-91de-d7d3af450781",
+						"exec": [
+							"pm.test(\"Rnut fghgbg\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "tut.by",
+					"host": [
+						"tut",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "onliner.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4f868342-9b7d-43be-b953-c0e82d55753f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(90);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "onliner.by",
+					"host": [
+						"onliner",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vk.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b08e35d1-1fef-4996-a77c-40eb6b75d4d8",
+						"exec": [
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Created\");",
+							"});",
+							"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {",
+							"    console.log(response.json());",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "vk.com",
+					"host": [
+						"vk",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oz.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b341da68-32cd-482b-aca1-2148e57371c2",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "oz.by",
+					"host": [
+						"oz",
+						"by"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
